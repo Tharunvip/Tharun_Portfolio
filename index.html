@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rajendran Tharun Kumar | Full-Stack, Mobile & Web App, AI/ML Freelance Developer</title>
+  <meta name="description" content="Portfolio of Rajendran Tharun Kumar - Full-Stack Developer, Mobile & Web App Engineer, and AI/ML Developer. I turn ideas into complete, production-ready digital products.">
+  
+  <!-- Font Awesome & Lucide Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Interactive Canvas Background -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">
+        <span>R. Tharun <span class="gradient-text">Kumar</span></span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li class="nav-menu-header">
+          <a href="#hero" class="nav-menu-brand" aria-label="Back to top">
+            <span class="logo-icon">RT</span>
+            <span class="nav-menu-title">R. Tharun Kumar</span>
+          </a>
+          <button class="nav-menu-close" id="nav-menu-close" aria-label="Close navigation">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </li>
+        <li class="nav-menu-label"><span>Menu</span></li>
+        <li><a href="#about" class="active"><span class="nav-link-index">01</span><i class="fa-solid fa-user"></i><span class="nav-link-text">About</span><i class="fa-solid fa-arrow-right nav-link-arrow"></i></a></li>
+        <li><a href="#services"><span class="nav-link-index">02</span><i class="fa-solid fa-wand-magic-sparkles"></i><span class="nav-link-text">Services</span><i class="fa-solid fa-arrow-right nav-link-arrow"></i></a></li>
+        <li><a href="#projects"><span class="nav-link-index">03</span><i class="fa-solid fa-layer-group"></i><span class="nav-link-text">Projects</span><i class="fa-solid fa-arrow-right nav-link-arrow"></i></a></li>
+        <li><a href="#estimator"><span class="nav-link-index">04</span><i class="fa-solid fa-sliders"></i><span class="nav-link-text">Scope Builder</span><i class="fa-solid fa-arrow-right nav-link-arrow"></i></a></li>
+        <li><a href="#workflow"><span class="nav-link-index">05</span><i class="fa-solid fa-diagram-project"></i><span class="nav-link-text">Workflow</span><i class="fa-solid fa-arrow-right nav-link-arrow"></i></a></li>
+        <li><a href="#skills"><span class="nav-link-index">06</span><i class="fa-solid fa-code"></i><span class="nav-link-text">Skills</span><i class="fa-solid fa-arrow-right nav-link-arrow"></i></a></li>
+        <li><a href="#contact"><span class="nav-link-index">07</span><i class="fa-solid fa-envelope"></i><span class="nav-link-text">Contact</span><i class="fa-solid fa-arrow-right nav-link-arrow"></i></a></li>
+        <li class="nav-menu-footer">
+          <span class="nav-menu-footer-title">Let's build something <strong>great</strong> together</span>
+          <div class="nav-menu-socials">
+            <a href="https://wa.me/918977859992?text=Hi%20Rajendran%20Tharun%20Kumar," target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:tharunvip65@gmail.com" aria-label="Send email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="#estimator" class="btn btn-primary btn-sm">
+          <i class="fa-solid fa-rocket"></i> Start a Project
+        </a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="pulse-dot"></span>
+            Available for New Freelance Projects & Contracts
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Rajendran Tharun Kumar</span>
+          </h1>
+
+          <div class="hero-roles">
+            <span>Building as:</span>
+            <span class="typewriter" id="typewriter"></span>
+          </div>
+
+          <p class="hero-description">
+            I turn ideas into <strong>real, functional, and modern digital products</strong>. I build complete products with clean interfaces, practical features, responsive design, secure backend systems, and deployment-ready cloud architecture.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#estimator" class="btn btn-primary">
+              <i class="fa-solid fa-paper-plane"></i> Let's Build Your Idea
+            </a>
+            <a href="#projects" class="btn btn-secondary">
+              <i class="fa-solid fa-layer-group"></i> Explore Case Studies
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-avatar-wrapper">
+          <div class="avatar-halo">
+            <div class="avatar-img-container">
+              <img src="./myphoto.jpeg" alt="Rajendran Tharun Kumar - Full-Stack Developer">
+            </div>
+          </div>
+
+          <div class="floating-badge badge-1">
+            <i class="fa-solid fa-mobile-screen-button" style="color: #00f2fe;"></i> Mobile & Web Apps
+          </div>
+          <div class="floating-badge badge-2">
+            <i class="fa-solid fa-cloud" style="color: #FFCA28;"></i> Firebase Architecture
+          </div>
+          <div class="floating-badge badge-3">
+            <i class="fa-solid fa-brain" style="color: #9D4EDD;"></i> AI/ML & Vision
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" style="padding-top: 60px; padding-bottom: 60px;">
+    <div class="container">
+      <div class="section-header" style="margin-bottom: 40px;">
+        <div class="section-tag"><i class="fa-solid fa-user"></i> About Rajendran Tharun Kumar</div>
+        <h2 class="section-title">Turning Vision Into <span class="gradient-text">Working Digital Products</span></h2>
+        <p class="section-subtitle">I don't just build pages — I focus on building complete digital products with clean interfaces, practical features, responsive design, secure backends, and deployment-ready architecture.</p>
+      </div>
+
+      <!-- Quick Metrics Strip -->
+      <div class="stats-strip glass-card">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <h3 class="gradient-text">100%</h3>
+            <p>End-to-End Ownership</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="gradient-text">8+</h3>
+            <p>Core Client Services</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="gradient-text">Full-Stack</h3>
+            <p>Web • App • AI • Cloud</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="gradient-text">Fast</h3>
+            <p>Rapid MVP Turnaround</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Services Section (01 to 08) -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-briefcase"></i> Freelance Solutions</div>
+        <h2 class="section-title">High-Impact Client <span class="gradient-text">Services</span></h2>
+        <p class="section-subtitle">Tailored development solutions designed to turn concepts into profitable, scalable digital assets.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 01 -->
+        <div class="glass-card service-card">
+          <div class="service-num">01 — WEB DEVELOPMENT</div>
+          <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3 class="service-title">Website Development</h3>
+          <p class="service-desc">Business websites, portfolios, landing pages, and interactive web tools crafted with responsive mobile-first UI and high conversion rates.</p>
+          <a href="#estimator" class="service-link" onclick="preselectService('Website Development')">Plan Website <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Service 02 -->
+        <div class="glass-card service-card">
+          <div class="service-num">02 — MOBILE & WEB APPS</div>
+          <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+          <h3 class="service-title">Mobile App Development</h3>
+          <p class="service-desc">Cross-platform (Flutter) & native mobile apps for Android & iOS, customer & provider ecosystems, booking platforms, and real-time app solutions.</p>
+          <a href="#estimator" class="service-link" onclick="preselectService('Mobile App Development')">Plan Mobile App <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Service 03 -->
+        <div class="glass-card service-card">
+          <div class="service-num">03 — FULL-STACK</div>
+          <div class="service-icon"><i class="fa-solid fa-layer-group"></i></div>
+          <h3 class="service-title">Full-Stack Architecture</h3>
+          <p class="service-desc">Complete product lifecycle: Frontend + backend + database + authentication + REST APIs + production cloud deployment.</p>
+          <a href="#estimator" class="service-link" onclick="preselectService('Full-Stack Development')">Build Full-Stack <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Service 04 -->
+        <div class="glass-card service-card">
+          <div class="service-num">04 — CLOUD & FIREBASE</div>
+          <div class="service-icon"><i class="fa-solid fa-fire"></i></div>
+          <h3 class="service-title">Firebase Solutions</h3>
+          <p class="service-desc">Firebase Auth, Firestore, Cloud Functions, FCM Push Notifications, App Check security, and Cloudinary media pipelines.</p>
+          <a href="#estimator" class="service-link" onclick="preselectService('Firebase Solutions')">Integrate Backend <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Service 05 -->
+        <div class="glass-card service-card">
+          <div class="service-num">05 — AI & ML</div>
+          <div class="service-icon"><i class="fa-solid fa-brain"></i></div>
+          <h3 class="service-title">AI/ML Solutions</h3>
+          <p class="service-desc">Computer Vision, Object Detection with YOLO, OpenCV image processing, voice feedback assistants, and intelligent automation.</p>
+          <a href="#estimator" class="service-link" onclick="preselectService('AI/ML Development')">Explore AI Solutions <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Service 06 -->
+        <div class="glass-card service-card">
+          <div class="service-num">06 — UI/UX & INTERACTIVE</div>
+          <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <h3 class="service-title">UI/UX & Modern UX</h3>
+          <p class="service-desc">Interactive product dashboards, smooth animations, glassmorphism aesthetics, and intuitive workflows that users love.</p>
+          <a href="#estimator" class="service-link" onclick="preselectService('UI/UX & Interactive')">Enhance Experience <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Service 07 -->
+        <div class="glass-card service-card">
+          <div class="service-num">07 — MVP DEVELOPMENT</div>
+          <div class="service-icon"><i class="fa-solid fa-rocket"></i></div>
+          <h3 class="service-title">MVP Prototyping</h3>
+          <p class="service-desc">Rapidly turn your startup idea into a working minimum viable product to present to investors, early users, and partners.</p>
+          <a href="#estimator" class="service-link" onclick="preselectService('MVP Development')">Launch Your MVP <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Service 08 -->
+        <div class="glass-card service-card">
+          <div class="service-num">08 — APP IMPROVEMENTS</div>
+          <div class="service-icon"><i class="fa-solid fa-wrench"></i></div>
+          <h3 class="service-title">Existing App Upgrades</h3>
+          <p class="service-desc">Fix bugs, refactor code, redesign UI, integrate third-party APIs, optimize performance, and scale existing codebases.</p>
+          <a href="#estimator" class="service-link" onclick="preselectService('Existing App Improvements')">Upgrade App <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects & Case Studies -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-folder-open"></i> Portfolio Case Studies</div>
+        <h2 class="section-title">Featured Work & <span class="gradient-text">Products</span></h2>
+        <p class="section-subtitle">Explore selected applications spanning mobile ecosystems, trading workspaces, computer vision AI, and enterprise web systems.</p>
+      </div>
+
+      <!-- Project Category Filters -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+        <button class="filter-btn" data-filter="ai">AI / Computer Vision</button>
+        <button class="filter-btn" data-filter="web">Web Tools & Systems</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: SalonHub -->
+        <div class="glass-card project-card" data-category="mobile">
+          <div class="project-banner">
+            <div class="project-category-badge">Flutter & Firebase</div>
+            <i class="fa-solid fa-scissors project-icon-large"></i>
+            <div class="project-banner-overlay"></div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">SalonHub — Salon Booking Platform</h3>
+            <p class="project-desc">A complete salon booking ecosystem featuring Customer, Salon Owner, and Platform Admin roles with real-time queue tracking and token systems.</p>
+            <div class="tech-tags">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">Firestore</span>
+              <span class="tech-tag">FCM</span>
+              <span class="tech-tag">Cloudinary</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://salonapp-cf6f2.web.app" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                <i class="fa-solid fa-eye"></i> SalonHub App
+              </a>
+              <button class="btn btn-secondary btn-sm" onclick="openProjectModal('salonhub')">
+                <i class="fa-solid fa-eye"></i> View Case Study
+              </button>
+            </div>
+            <div class="project-footer-secondary">
+              <span style="font-size: 0.85rem; color: var(--neon-cyan);"><i class="fa-solid fa-users"></i> Multi-Role Platform</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: TradeLab -->
+        <div class="glass-card project-card" data-category="web">
+          <div class="project-banner">
+            <div class="project-category-badge">Web Application</div>
+            <i class="fa-solid fa-chart-line project-icon-large"></i>
+            <div class="project-banner-overlay"></div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">TradeLab — Trading Workspace</h3>
+            <p class="project-desc">Browser-based trading annotation and chart workspace inspired by professional creative tools with file-system tree structure and responsive canvas tools.</p>
+            <div class="tech-tags">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">HTML5 Canvas</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">GitHub Pages</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://tharunvip.github.io/TradeLab/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                <i class="fa-solid fa-eye"></i> TradeLab
+              </a>
+              <button class="btn btn-secondary btn-sm" onclick="openProjectModal('tradelab')">
+                <i class="fa-solid fa-eye"></i> View Case Study
+              </button>
+            </div>
+            <div class="project-footer-secondary">
+              <span style="font-size: 0.85rem; color: var(--neon-cyan);"><i class="fa-solid fa-palette"></i> Productivity Tool</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: AI Assistant -->
+        <div class="glass-card project-card" data-category="ai">
+          <div class="project-banner">
+            <div class="project-category-badge">Python & Computer Vision</div>
+            <i class="fa-solid fa-eye project-icon-large"></i>
+            <div class="project-banner-overlay"></div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">AI Object Detection & Navigation</h3>
+            <p class="project-desc">Computer vision assistant for visually impaired users with real-time YOLOv8 spatial object detection, Vosk voice feedback, and emergency SOS dispatch.</p>
+            <div class="tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">YOLOv8</span>
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">Vosk</span>
+              <span class="tech-tag">pyttsx3</span>
+            </div>
+            <div class="project-footer">
+              <button class="btn btn-secondary btn-sm" onclick="openProjectModal('aiassistant')">
+                <i class="fa-solid fa-eye"></i> View Case Study
+              </button>
+            </div>
+            <div class="project-footer-secondary">
+              <span style="font-size: 0.85rem; color: var(--neon-cyan);"><i class="fa-solid fa-robot"></i> AI Vision Assist</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Student Late Mgmt -->
+        <div class="glass-card project-card" data-category="web">
+          <div class="project-banner">
+            <div class="project-category-badge">Full-Stack Web</div>
+            <i class="fa-solid fa-user-graduate project-icon-large"></i>
+            <div class="project-banner-overlay"></div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Student Late Management System</h3>
+            <p class="project-desc">Web-based management system with Student, Faculty, and HOD portals featuring fine calculations, automated reports, email alerts, and Chart.js analytics.</p>
+            <div class="tech-tags">
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">PHPMailer</span>
+              <span class="tech-tag">Chart.js</span>
+            </div>
+            <div class="project-footer">
+              <button class="btn btn-secondary btn-sm" onclick="openProjectModal('latemgmt')">
+                <i class="fa-solid fa-eye"></i> View Case Study
+              </button>
+            </div>
+            <div class="project-footer-secondary">
+              <span style="font-size: 0.85rem; color: var(--neon-cyan);"><i class="fa-solid fa-database"></i> Database Portal</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Sri Dhesamma -->
+        <div class="glass-card project-card" data-category="web">
+          <div class="project-banner">
+            <img src="dhesamma.svg" alt="Sri Dhesamma temple pilgrimage site preview" class="project-thumb" />
+            <div class="project-category-badge">Interactive Web Experience</div>
+            <div class="project-banner-overlay"></div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Sri Dhesamma — Temple Pilgrimage Platform</h3>
+            <p class="project-desc">A premium cinematic pilgrimage web experience covering darshan bookings, sevas, accommodation, and donations — with a parallax hero, animated intro, gallery lightbox, and festival storytelling.</p>
+            <div class="tech-tags">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3 Animations</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Responsive UI</span>
+              <span class="tech-tag">Intersection Observer</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://tharunvip.github.io/sri-dhesamma/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                <i class="fa-solid fa-temple"></i> Live Site
+              </a>
+              <button class="btn btn-secondary btn-sm" onclick="openProjectModal('dhesamma')">
+                <i class="fa-solid fa-eye"></i> View Case Study
+              </button>
+            </div>
+            <div class="project-footer-secondary">
+              <span style="font-size: 0.85rem; color: var(--neon-cyan);"><i class="fa-solid fa-temple"></i> Pilgrimage Platform</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Client Project Estimator & Scope Builder -->
+  <section id="estimator">
+    <div class="container">
+      <div class="estimator-container">
+        <div class="section-header" style="margin-bottom: 30px;">
+          <div class="section-tag"><i class="fa-solid fa-sliders"></i> Client Project Planner</div>
+          <h2 class="section-title">Interactive Project <span class="gradient-text">Estimator</span></h2>
+          <p class="section-subtitle">Select your requirements below to instantly generate a project scope summary and send it directly to my inbox or WhatsApp.</p>
+        </div>
+
+        <div class="estimator-grid">
+          <div class="estimator-options">
+            <!-- Step 1: Project Type -->
+            <div class="estimator-step">
+              <div class="step-label">
+                <i class="fa-solid fa-cube" style="color: var(--neon-cyan);"></i> 1. Select Project Type:
+              </div>
+              <div class="options-pills" id="type-options">
+                <button class="option-pill selected" data-value="Website Development" data-days="5-7">
+                  <i class="fa-solid fa-globe"></i> Business Website
+                </button>
+                <button class="option-pill" data-value="Mobile App (iOS, Android, Flutter)" data-days="10-14">
+                  <i class="fa-solid fa-mobile-screen-button"></i> Mobile App (iOS / Android)
+                </button>
+                <button class="option-pill" data-value="Full-Stack SaaS Product" data-days="14-21">
+                  <i class="fa-solid fa-layer-group"></i> Full-Stack App
+                </button>
+                <button class="option-pill" data-value="AI / Computer Vision Project" data-days="7-12">
+                  <i class="fa-solid fa-brain"></i> AI / ML Solution
+                </button>
+                <button class="option-pill" data-value="Startup MVP Prototype" data-days="7-10">
+                  <i class="fa-solid fa-rocket"></i> MVP Prototype
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 2: Desired Modules -->
+            <div class="estimator-step">
+              <div class="step-label">
+                <i class="fa-solid fa-puzzle-piece" style="color: var(--neon-purple);"></i> 2. Key Modules & Features:
+              </div>
+              <div class="options-pills" id="feature-options">
+                <button class="option-pill selected" data-value="User Authentication & Roles">
+                  <i class="fa-solid fa-key"></i> Auth & User Roles
+                </button>
+                <button class="option-pill selected" data-value="Firebase Real-Time DB">
+                  <i class="fa-solid fa-database"></i> Firebase Cloud DB
+                </button>
+                <button class="option-pill" data-value="Booking & Queue System">
+                  <i class="fa-solid fa-calendar-check"></i> Booking & Queue
+                </button>
+                <button class="option-pill" data-value="Custom Dark UI/UX Animations">
+                  <i class="fa-solid fa-palette"></i> Custom Dark UI/UX
+                </button>
+                <button class="option-pill" data-value="Push Notifications & Chat">
+                  <i class="fa-solid fa-bell"></i> Push Notifications
+                </button>
+                <button class="option-pill" data-value="AI Vision / Voice Module">
+                  <i class="fa-solid fa-microphone"></i> AI / Voice Engine
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Summary Side Card -->
+          <div class="estimator-summary-card">
+            <div>
+              <h3 style="font-size: 1.4rem; margin-bottom: 20px;">Project Scope Breakdown</h3>
+              
+              <div class="est-metric">
+                <span>Selected Service</span>
+                <strong id="est-service-title">Business Website</strong>
+              </div>
+
+              <div class="est-metric">
+                <span>Estimated Development Timeline</span>
+                <strong id="est-timeline" style="color: var(--neon-emerald);">5 - 7 Days</strong>
+              </div>
+
+              <div class="est-metric">
+                <span>Active Modules</span>
+                <p id="est-features-list" style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 4px;">User Authentication & Roles, Firebase Cloud DB</p>
+              </div>
+            </div>
+
+            <div style="margin-top: 30px;">
+              <button class="btn btn-emerald" style="width: 100%; margin-bottom: 12px;" onclick="sendEstimatorWhatsApp()">
+                <i class="fa-brands fa-whatsapp"></i> Instant WhatsApp Inquiry
+              </button>
+              <button class="btn btn-secondary" style="width: 100%;" onclick="sendEstimatorEmail()">
+                <i class="fa-solid fa-envelope"></i> Send Email Proposal
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Development Workflow Pipeline -->
+  <section id="workflow">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-diagram-project"></i> Proven Methodology</div>
+        <h2 class="section-title">My 8-Step <span class="gradient-text">Development Approach</span></h2>
+        <p class="section-subtitle">From initial spark to live production cloud architecture, every project follows a structured engineering pipeline.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-content">
+            <div class="timeline-step-num">STEP 01</div>
+            <h3>1. Idea & Discovery</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 6px;">Understanding client goals, target audience, technical feasibility, and product requirements.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-content">
+            <div class="timeline-step-num">STEP 02</div>
+            <h3>2. Architecture Planning</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 6px;">Selecting tech stack, database schemas, cloud infrastructure, and API contracts.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-content">
+            <div class="timeline-step-num">STEP 03</div>
+            <h3>3. UI/UX Wireframing</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 6px;">Designing modern responsive interfaces, interactive flows, dark mode themes, and user journeys.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-content">
+            <div class="timeline-step-num">STEP 04</div>
+            <h3>4. Frontend Engineering</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 6px;">Building crisp, fast responsive web layouts (React/HTML5) or Flutter cross-platform mobile views.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-content">
+            <div class="timeline-step-num">STEP 05</div>
+            <h3>5. Backend & Firebase Setup</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 6px;">Implementing secure Firebase Auth, Firestore models, Cloud Functions, and SQL database schemas.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-content">
+            <div class="timeline-step-num">STEP 06</div>
+            <h3>6. Integration & AI Engines</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 6px;">Connecting third-party REST APIs, Cloudinary media storage, YOLOv8 vision engines, and push messaging.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-content">
+            <div class="timeline-step-num">STEP 07</div>
+            <h3>7. Rigorous Testing & QA</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 6px;">Conducting multi-device responsiveness tests, edge-case security checks, and performance optimization.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-content">
+            <div class="timeline-step-num">STEP 08</div>
+            <h3>8. Deployment & Handover</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 6px;">Deploying to Firebase Hosting, GitHub Pages, or App Stores with complete documentation and support.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Matrix -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-code"></i> Technical Stack</div>
+        <h2 class="section-title">Technologies & <span class="gradient-text">Skills</span></h2>
+        <p class="section-subtitle">A balanced arsenal across frontend, mobile frameworks, backend systems, databases, and AI computer vision tools.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="glass-card skill-card">
+          <i class="fa-brands fa-flutter skill-icon" style="color: #54C5F8;"></i>
+          <div class="skill-info">
+            <h4>Flutter & Dart</h4>
+            <p>Cross-Platform Mobile Apps</p>
+          </div>
+        </div>
+
+        <div class="glass-card skill-card">
+          <i class="fa-brands fa-java skill-icon" style="color: #F89820;"></i>
+          <div class="skill-info">
+            <h4>Java</h4>
+            <p>Full-Stack & Backend Logic</p>
+          </div>
+        </div>
+
+        <div class="glass-card skill-card">
+          <i class="fa-brands fa-python skill-icon" style="color: #3776AB;"></i>
+          <div class="skill-info">
+            <h4>Python</h4>
+            <p>AI / Computer Vision / ML</p>
+          </div>
+        </div>
+
+        <div class="glass-card skill-card">
+          <i class="fa-solid fa-fire skill-icon" style="color: #FFCA28;"></i>
+          <div class="skill-info">
+            <h4>Firebase Suite</h4>
+            <p>Firestore, Auth, Functions, FCM</p>
+          </div>
+        </div>
+
+        <div class="glass-card skill-card">
+          <i class="fa-brands fa-react skill-icon" style="color: #61DAFB;"></i>
+          <div class="skill-info">
+            <h4>React & JS</h4>
+            <p>Modern Web Frontend</p>
+          </div>
+        </div>
+
+        <div class="glass-card skill-card">
+          <i class="fa-solid fa-eye skill-icon" style="color: #10B981;"></i>
+          <div class="skill-info">
+            <h4>OpenCV & YOLOv8</h4>
+            <p>Object Detection & Vision</p>
+          </div>
+        </div>
+
+        <div class="glass-card skill-card">
+          <i class="fa-solid fa-database skill-icon" style="color: #00758F;"></i>
+          <div class="skill-info">
+            <h4>SQL & MySQL</h4>
+            <p>Relational Databases</p>
+          </div>
+        </div>
+
+        <div class="glass-card skill-card">
+          <i class="fa-solid fa-cloud-arrow-up skill-icon" style="color: #3448C5;"></i>
+          <div class="skill-info">
+            <h4>Cloudinary</h4>
+            <p>Media Management</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-comments"></i> Get In Touch</div>
+        <h2 class="section-title">Let's Build Something <span class="gradient-text">Great</span></h2>
+        <p class="section-subtitle">Have an idea or need a reliable developer? Message me directly to turn your requirement into a working product.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Cards -->
+        <div class="glass-card contact-info-card">
+          <div>
+            <h3 style="font-size: 1.6rem; margin-bottom: 24px;">Contact Details</h3>
+
+            <div class="contact-method">
+              <div class="contact-icon"><i class="fa-solid fa-user"></i></div>
+              <div class="contact-details">
+                <span>Name</span>
+                <p>Rajendran Tharun Kumar</p>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <div class="contact-icon"><i class="fa-solid fa-briefcase"></i></div>
+              <div class="contact-details">
+                <span>Freelance Status</span>
+                <p style="color: var(--neon-emerald);">Available for Projects</p>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-details">
+                <span>Location</span>
+                <p>India (Remote Worldwide)</p>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="contact-details">
+                <span>Phone / WhatsApp</span>
+                <p><a href="tel:+918977859992" style="color: var(--text-primary);">+91 8977859992</a></p>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-details">
+                <span>Email</span>
+                <p><a href="mailto:tharunvip65@gmail.com" style="color: var(--text-primary);">tharunvip65@gmail.com</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 30px;">
+            <a href="https://wa.me/918977859992?text=Hi%20Rajendran%20Tharun%20Kumar,%20I%20have%20a%20project%20idea%20I'd%20like%20to%20discuss." target="_blank" rel="noopener" class="btn btn-emerald" style="width: 100%;">
+              <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="glass-card" style="padding: 40px;">
+          <form id="contact-form" onsubmit="handleFormSubmit(event)">
+            <div class="form-group">
+              <label for="name">Your Name / Organization</label>
+              <input type="text" id="name" class="form-input" placeholder="e.g. Alex Johnson" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" class="form-input" placeholder="alex@company.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="project-type">Project Focus</label>
+              <select id="project-type" class="form-input">
+                <option value="Website Development">Website Development</option>
+                <option value="Mobile App Development">Mobile App (iOS / Android / Flutter)</option>
+                <option value="Full-Stack Product">Full-Stack Application</option>
+                <option value="Firebase Integration">Firebase & Cloud Backend</option>
+                <option value="AI / Vision System">AI & Computer Vision</option>
+                <option value="MVP Prototype">Startup MVP Prototype</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Project Description & Requirements</label>
+              <textarea id="message" class="form-textarea" placeholder="Tell me about your idea, target timeline, or features needed..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="fa-solid fa-paper-plane"></i> Send Project Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Case Study Modal Overlay -->
+  <div class="modal-overlay" id="project-modal">
+    <div class="modal-content glass-card">
+      <button class="modal-close" onclick="closeProjectModal()"><i class="fa-solid fa-xmark"></i></button>
+      <div id="modal-body">
+        <!-- Content inserted dynamically by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <a href="#hero" class="logo">
+        <span>R. Tharun <span class="gradient-text">Kumar</span></span>
+      </a>
+      <div class="footer-copy">
+        &copy; <span id="year"></span> Rajendran Tharun Kumar. All Rights Reserved. Built for Freelance Client Growth.
+      </div>
+      <div>
+        <a href="#hero" class="btn btn-secondary btn-sm"><i class="fa-solid fa-arrow-up"></i> Top</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom JavaScript Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
