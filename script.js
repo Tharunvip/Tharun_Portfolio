@@ -310,9 +310,9 @@ function initProjectFilters() {
    -------------------------------------------------------------------------- */
 const projectData = {
   salonhub: {
-    title: "💈 SalonHub — Men's Salon Booking Ecosystem",
-    tagline: "Multi-role customer & salon management platform with real-time queue tracking.",
-    overview: "SalonHub solves appointment waiting times by creating a synchronized multi-role platform for Customers, Salon Owners, and Platform Administrators.",
+    title: "💈 SalonHub — Salon Booking Platform",
+    tagline: "Salon booking and queue management for customers, salon owners, and services.",
+    overview: "SalonHub helps customers book salon appointments while giving salon owners tools to manage bookings, customers, services, and queues.",
     roles: [
       {
         title: "Customer Role",
@@ -403,34 +403,57 @@ const projectData = {
     ],
     tech: ["PHP 8", "MySQL Relational DB", "PHPMailer", "Chart.js", "Bootstrap 5", "HTML5/CSS3"]
   },
-  dhesamma: {
-    title: "🛕 Sri Dhesamma — Temple Pilgrimage Platform",
-    tagline: "Premium cinematic pilgrimage web experience for darshan, sevas, accommodation, and donations.",
-    overview: "A fictional premium Indian temple pilgrimage platform crafted as a complete digital destination — darshan booking, seva offerings, guest rooms, donations, festivals, and pilgrim information — all wrapped in an immersive cinematic atmosphere.",
+  venkateswara: {
+    title: "🛕 Sri Venkateswara Temple — Temple Website",
+    tagline: "A premium temple website for darshan, sevas, accommodation, donations, festivals, and pilgrim information.",
+    overview: "An immersive temple website inspired by Sri Venkateswara Swamy, bringing temple information and essential pilgrim services together in a responsive digital experience.",
     roles: [
       {
-        title: "Experience & Interface",
+        title: "Temple Information",
         items: [
-          "Animated brand intro with skip control",
-          "Parallax cinematic hero with drifting particles",
-          "Reveal-on-scroll pilgrim path timeline",
-          "Gallery lightbox with full-screen viewing",
-          "Festival cards & storytelling sections",
-          "Fully responsive across mobile, tablet & desktop"
+          "Temple history and information",
+          "Festival information and gallery",
+          "Pilgrim travel and visit details",
+          "Responsive mobile, tablet, and desktop layout"
         ]
       },
       {
         title: "Pilgrim Services",
         items: [
-          "Darshan slot offerings with sample availability",
-          "Seva packages with duration details",
-          "Accommodation tiers with pricing display",
-          "Donation & journey planning panels",
-          "Travel, timings & dress-code information grid"
+          "Darshan information",
+          "Sevas and accommodation",
+          "Donations and pilgrim information"
         ]
       }
     ],
-    tech: ["HTML5", "CSS3 Animations & Keyframes", "Vanilla JavaScript", "Intersection Observer", "Responsive Mobile-First UI"]
+    tech: ["HTML5", "CSS3", "JavaScript", "Responsive Design"]
+  },
+  vipsparking: {
+    title: "🅿️ VIPsParking — Smart Parking Management System",
+    tagline: "Vehicle entry, checkout, and parking charge management for parking shop owners.",
+    overview: "VIPsParking helps parking shop owners manage vehicles, calculate parking durations and fees, and track offline payment status, with admin verification and a separate web dashboard.",
+    roles: [
+      {
+        title: "Parking Shop Owner",
+        items: [
+          "Owner registration and login with admin verification and approval",
+          "Vehicle entry management for multiple vehicle types",
+          "Record the last four digits of each vehicle registration number",
+          "Automatically capture parking entry date and time",
+          "Check out vehicles and calculate parking duration and fee",
+          "Configure hourly and daily parking rates",
+          "Manage payment status for offline payments"
+        ]
+      },
+      {
+        title: "Administration",
+        items: [
+          "Separate admin web dashboard",
+          "Review and approve parking shop owners"
+        ]
+      }
+    ],
+    tech: ["Flutter", "Dart", "Supabase", "React.js", "JavaScript"]
   }
 };
 

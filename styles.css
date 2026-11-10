@@ -671,8 +671,10 @@ body.menu-open {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
+  grid-auto-rows: 1fr;
   gap: 30px;
+  align-items: stretch;
 }
 
 .project-card {
@@ -716,6 +718,16 @@ body.menu-open {
   object-fit: cover;
   z-index: 0;
   transition: transform 0.45s ease;
+}
+
+.project-preview-frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: #0d1322;
+  pointer-events: none;
 }
 
 .project-card:hover .project-thumb {
@@ -785,15 +797,23 @@ body.menu-open {
   justify-content: center;
   gap: 12px;
   flex-wrap: wrap;
+  margin-top: auto;
   padding-top: 16px;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .project-footer .btn {
   flex: 1 1 0%;
-  min-width: 150px;
+  min-width: min(100%, 150px);
   justify-content: center;
-  white-space: nowrap;
+  white-space: normal;
+  text-align: center;
+}
+
+.project-link-disabled {
+  cursor: not-allowed;
+  opacity: 0.72;
+  pointer-events: none;
 }
 
 .project-footer-secondary {
